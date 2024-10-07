@@ -32,7 +32,6 @@ exports.createPlace = async (req, res) => {
       photos,
       openingHours,
       contactInfo,
-      createdBy: req.user._id,
     });
 
     await place.save();

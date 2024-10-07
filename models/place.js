@@ -37,10 +37,6 @@ const PlaceSchema = new Schema({
     website: String,
     email: String,
   },
-  createdBy: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-  },
   createdAt: {
     type: Date,
     default: Date.now,
