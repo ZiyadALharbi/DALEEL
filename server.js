@@ -7,6 +7,10 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/auth", require("./routes/auth"));
+app.use("/api/owner", require("./routes/owner.js"));
+app.use("/api/place", require("./routes/place.js"));
+app.use("/api/plan", require("./routes/plan.js"));
+
 
 mongoose
   .connect(process.env.MONGO_URI)
