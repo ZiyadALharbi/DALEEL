@@ -10,6 +10,8 @@ app.use("/api/auth", require("./routes/auth"));
 app.use("/api/owner", require("./routes/owner.js"));
 app.use("/api/place", require("./routes/place.js"));
 app.use("/api/plan", require("./routes/plan.js"));
+app.use("/api/favorite", require("./routes/favorite.js"));
+
 
 
 mongoose
